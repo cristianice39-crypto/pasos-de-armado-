@@ -117,23 +117,6 @@ body {
   cursor: pointer;
 }
 
-.btn-github {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #041019;
-  background: var(--cyan);
-  padding: 9px 16px;
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-github:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 18px rgba(0, 240, 255, 0.45);
-}
-
 /* CONTAINER & GRID */
 .container {
   position: relative;
@@ -180,7 +163,7 @@ body {
   font-weight: 700;
 }
 
-.file-badge {
+.phase-badge {
   font-family: var(--mono);
   font-size: 0.7rem;
   background: rgba(16, 185, 129, 0.12);
@@ -190,10 +173,10 @@ body {
   border-radius: 6px;
 }
 
-.file-badge.demo {
-  background: rgba(148, 163, 184, 0.12);
-  color: var(--muted);
-  border-color: rgba(148, 163, 184, 0.25);
+.phase-badge.secondary {
+  background: rgba(0, 240, 255, 0.08);
+  color: var(--cyan);
+  border-color: rgba(0, 240, 255, 0.25);
 }
 
 /* VIEWPORT PHOTO CONTAINER */
@@ -306,9 +289,3 @@ body {
 .frame-18 { padding: 4px; background: linear-gradient(180deg, var(--cyan), transparent, var(--violet)); }
 .frame-19 { padding: 6px; border: 2px solid #7dd3fc; box-shadow: 0 0 18px rgba(125, 211, 252, 0.25); }
 .frame-20 { padding: 7px; background: linear-gradient(135deg, #334155, #0f172a, #475569); border: 1px solid #64748b; }
-
-/* GITHUB GUIDE */
-.github-guide { margin-top: 56px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
-.github-guide h2 { font-family: var(--display); margin-bottom: 10px; color: var(--cyan); }
-.github-guide p { color: var(--muted); margin-bottom: 16px; font-size: 0.92rem; }
-.tree-box { background: #05070c; border: 1px solid var(--border); border-radius: 10px; padding: 18px; font-family: var(--mono); font-size: 0.85rem; color: #a5f3fc; overflow-x: auto; }

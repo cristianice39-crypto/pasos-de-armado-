@@ -3,16 +3,18 @@ const framesData = [
     id: "01",
     frameClass: "frame-01",
     frameName: "LÁSER CONIC ORBITAL",
+    badge: "FASE 01 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-01-ensamble-pinza.jpeg",
     title: "Ensamble Mecánico de Pinza y Antebrazo Impreso en 3D",
-    description: "Vista general del efector final (gripper) articulado en PLA plateado sostenido junto a la base cilíndrica del brazo robótico. Se observan los micro-servomotores instalados, cables Dupont y la guía en pantalla del proyecto con Arduino UNO.",
+    description: "Vista general del efector final (gripper) articulado en PLA plateado sostenido junto a la base cilíndrica del brazo robótico. Se observan los micro-servomotores instalados, cables Dupont y la arquitectura de control con Arduino UNO.",
     tags: ["Impresión 3D", "Gripper 2-Dedos", "Micro Servos", "Arduino UNO"]
   },
   {
     id: "02",
     frameClass: "frame-02",
     frameName: "ESCÁNER BIOMÉTRICO HUD",
+    badge: "FASE 02 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-02-detalle-servos.jpeg",
     title: "Detalle de Transmisión de Muñeca y Cableado Interno",
@@ -23,6 +25,7 @@ const framesData = [
     id: "03",
     frameClass: "frame-03",
     frameName: "DOBLE ANILLO ROTATIVO",
+    badge: "FASE 03 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-03-arduino-base.jpeg",
     title: "Montaje de Placa Arduino UNO en Base Estructural",
@@ -33,6 +36,7 @@ const framesData = [
     id: "04",
     frameClass: "frame-04",
     frameName: "RETÍCULA MILITAR TÁCTICA",
+    badge: "FASE 04 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-04-shield-pwm.jpeg",
     title: "Integración de Shield PCA9685 PWM de 16 Canales",
@@ -43,6 +47,7 @@ const framesData = [
     id: "05",
     frameClass: "frame-05",
     frameName: "TELEMETRÍA DE PLASMA",
+    badge: "FASE 05 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-05-interior-chasis.jpeg",
     title: "Preparación de Componentes y Subconjuntos Electrónicos",
@@ -53,6 +58,7 @@ const framesData = [
     id: "06",
     frameClass: "frame-06",
     frameName: "SERVO PULSE CHASIS",
+    badge: "FASE 06 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-06-cableado-servos.jpeg",
     title: "Banco de Pruebas de 6 Servomotores (MG996R + MG90S)",
@@ -63,6 +69,7 @@ const framesData = [
     id: "07",
     frameClass: "frame-07",
     frameName: "CIRCUITO IMPRESO PCB",
+    badge: "FASE 07 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-07-pinza-mecanismo.jpeg",
     title: "Mecanismo de Eslabones Paralelos de la Pinza Robótica",
@@ -73,6 +80,7 @@ const framesData = [
     id: "08",
     frameClass: "frame-08",
     frameName: "PERSIANA ÓPTICA",
+    badge: "FASE 08 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-08-mecanismo-cierre.jpeg",
     title: "Ajuste de Tuercas y Mecanismo de Cierre de Pinza",
@@ -83,6 +91,7 @@ const framesData = [
     id: "09",
     frameClass: "frame-09",
     frameName: "RADAR DE PROXIMIDAD",
+    badge: "FASE 09 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-09-base-giratoria-servo.jpeg",
     title: "Instalación de Servo de Rotación en la Base del Chasis",
@@ -93,6 +102,7 @@ const framesData = [
     id: "10",
     frameClass: "frame-10",
     frameName: "HAZ DE FIBRA ÓPTICA",
+    badge: "FASE 10 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-10-ensamble-hombro.jpeg",
     title: "Estructura del Hombro Articulado y Montaje de Brazo",
@@ -103,6 +113,7 @@ const framesData = [
     id: "11",
     frameClass: "frame-11",
     frameName: "CIBER-BLINDAJE INDUSTRIAL",
+    badge: "FASE 11 // PRINCIPAL",
     isRealPhoto: true,
     fileName: "foto-11-brazo-articulado.jpeg",
     title: "Estructura General del Brazo Articulado Semi-Montado",
@@ -113,91 +124,100 @@ const framesData = [
     id: "12",
     frameClass: "frame-12",
     frameName: "NEÓN CYBERPUNK DUAL",
+    badge: "VISTA DETALLE // 12",
     isRealPhoto: false,
     fileName: "foto-01-ensamble-pinza.jpeg",
-    title: "Marco 12 — Contraste Cromático Dual",
-    description: "Iluminación lateral magenta y cian para resaltar componentes electrónicos sobre superficies oscuras.",
-    tags: ["Marco 12", "Dual Glow", "Hardware"]
+    title: "Contraste Cromático Dual — Efector Final",
+    description: "Iluminación lateral magenta y cian para resaltar la geometría articulada del efector final sobre superficies oscuras.",
+    tags: ["Dual Glow", "Gripper", "Hardware"]
   },
   {
     id: "13",
     frameClass: "frame-13",
     frameName: "HOLOGRAMA ESPECTRAL",
+    badge: "VISTA DETALLE // 13",
     isRealPhoto: false,
     fileName: "foto-03-arduino-base.jpeg",
-    title: "Marco 13 — Espectro Completo de Control",
-    description: "Borde multicolor rotativo que acompaña la arquitectura de control central basada en Arduino.",
-    tags: ["Marco 13", "Espectro", "Controlador"]
+    title: "Espectro Completo — Unidad de Control Central",
+    description: "Borde multicolor rotativo que acompaña la arquitectura de control central basada en microcontrolador Arduino UNO.",
+    tags: ["Espectro", "Controlador", "Chasis"]
   },
   {
     id: "14",
     frameClass: "frame-14",
     frameName: "NÚCLEO REACTOR ARC",
+    badge: "VISTA DETALLE // 14",
     isRealPhoto: false,
     fileName: "foto-04-shield-pwm.jpeg",
-    title: "Marco 14 — Perímetro Segmentado de Potencia",
-    description: "Borde punteado técnico ideal para etapas de alimentación y drivers PWM.",
-    tags: ["Marco 14", "CAD Style", "Potencia"]
+    title: "Perímetro Segmentado — Etapa de Potencia",
+    description: "Borde punteado técnico diseñado para destacar etapas de regulación de voltaje y drivers PWM de 16 canales.",
+    tags: ["CAD Style", "Potencia", "PCA9685"]
   },
   {
     id: "15",
     frameClass: "frame-15",
     frameName: "OSCILOSCOPIO DIGITAL",
+    badge: "VISTA DETALLE // 15",
     isRealPhoto: false,
     fileName: "foto-06-cableado-servos.jpeg",
-    title: "Marco 15 — Barras Horizontales de Señal",
-    description: "Enfoque vertical limpio con bordes superior e inferior tipo instrumento de medición en bus I2C.",
-    tags: ["Marco 15", "Instrumentación", "Señal PWM"]
+    title: "Barras Horizontales de Señal — Bus I2C y PWM",
+    description: "Enfoque vertical limpio con bordes superior e inferior tipo instrumento de medición en bus de control.",
+    tags: ["Instrumentación", "Señal PWM", "6 DOF"]
   },
   {
     id: "16",
     frameClass: "frame-16",
     frameName: "MATRIZ CUÁNTICA",
+    badge: "VISTA DETALLE // 16",
     isRealPhoto: false,
     fileName: "foto-07-pinza-mecanismo.jpeg",
-    title: "Marco 16 — Cuadrantes Sincronizados de Pinza",
-    description: "Dos arcos opuestos girando en sincronía alrededor del mecanismo del efector final.",
-    tags: ["Marco 16", "Sincronía", "Gripper"]
+    title: "Cuadrantes Sincronizados — Cinemática Paralela",
+    description: "Dos arcos opuestos girando en sincronía alrededor del mecanismo articulado de cuatro barras.",
+    tags: ["Sincronía", "Gripper", "Cinemática"]
   },
   {
     id: "17",
     frameClass: "frame-17",
     frameName: "CÁMARA DE ALTA VELOCIDAD",
+    badge: "VISTA DETALLE // 17",
     isRealPhoto: false,
     fileName: "foto-09-base-giratoria-servo.jpeg",
-    title: "Marco 17 — Alerta Térmica y Torque Base",
-    description: "Borde carmesí con sombra interna para destacar esfuerzos mecánicos en la base del robot.",
-    tags: ["Marco 17", "Torque Alto", "Alerta"]
+    title: "Alerta Térmica y Torque — Eje de Base",
+    description: "Borde carmesí con sombra interna para destacar esfuerzos mecánicos en el eje principal de rotación.",
+    tags: ["Torque Alto", "Base", "Eje Principal"]
   },
   {
     id: "18",
     frameClass: "frame-18",
     frameName: "ESCUDO DE GRAVEDAD",
+    badge: "VISTA DETALLE // 18",
     isRealPhoto: false,
     fileName: "foto-10-ensamble-hombro.jpeg",
-    title: "Marco 18 — Degradado Vertical de Carga",
-    description: "Transición sobria de cian a violeta para documentación cinemática del hombro.",
-    tags: ["Marco 18", "Cinemática", "Docs"]
+    title: "Degradado Vertical — Articulación de Hombro",
+    description: "Transición sobria de cian a violeta para documentación cinemática del soporte de elevación.",
+    tags: ["Cinemática", "Hombro", "Soporte"]
   },
   {
     id: "19",
     frameClass: "frame-19",
     frameName: "BÓVEDA CRIOGÉNICA",
+    badge: "VISTA DETALLE // 19",
     isRealPhoto: false,
     fileName: "foto-05-interior-chasis.jpeg",
-    title: "Marco 19 — Contorno Azul Hielo",
-    description: "Marco luminoso de baja saturación para diagramas de cableado interno.",
-    tags: ["Marco 19", "Cableado", "Clean UI"]
+    title: "Contorno Azul Hielo — Integración Interna",
+    description: "Marco luminoso de baja saturación para inspección limpia de componentes internos.",
+    tags: ["Cableado", "Chasis", "Hardware"]
   },
   {
     id: "20",
     frameClass: "frame-20",
     frameName: "TITANIUM CHASSIS PRO",
+    badge: "VISTA DETALLE // 20",
     isRealPhoto: false,
     fileName: "foto-11-brazo-articulado.jpeg",
-    title: "Marco 20 — Acabado Metálico Aeroespacial",
+    title: "Acabado Metálico Aeroespacial — Ensamble Final",
     description: "Bisel metálico oscuro diseñado para combinar con piezas impresas en filamento PLA plateado.",
-    tags: ["Marco 20", "Titanio", "Prototipo"]
+    tags: ["Titanio", "Prototipo", "PLA Plata"]
   }
 ];
 
@@ -213,12 +233,12 @@ function renderCards(onlyReal = false) {
     card.className = "card";
 
     const tagsHtml = item.tags.map(tag => `<span>${tag}</span>`).join("");
-    const badgeClass = item.isRealPhoto ? "file-badge" : "file-badge demo";
+    const badgeClass = item.isRealPhoto ? "phase-badge" : "phase-badge secondary";
 
     card.innerHTML = `
       <div class="card-header">
         <span class="frame-id">MARCO #${item.id} // ${item.frameName}</span>
-        <span class="${badgeClass}">img/${item.fileName}</span>
+        <span class="${badgeClass}">${item.badge}</span>
       </div>
 
       <div class="frame-stage ${item.frameClass}">
@@ -227,7 +247,6 @@ function renderCards(onlyReal = false) {
             src="img/${item.fileName}"
             alt="${item.title}"
             loading="lazy"
-            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22750%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%230f172a%22/><text x=%2250%25%22 y=%2246%25%22 fill=%22%2300f0ff%22 font-family=%22monospace%22 font-size=%2218%22 text-anchor=%22middle%22>Sube tu foto a:</text><text x=%2250%25%22 y=%2252%25%22 fill=%22%23ffffff%22 font-family=%22monospace%22 font-size=%2216%22 text-anchor=%22middle%22>img/${item.fileName}</text></svg>'"
           />
         </div>
       </div>
