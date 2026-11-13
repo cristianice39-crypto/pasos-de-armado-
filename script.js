@@ -16,45 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   escribir();
 });
 
-// ==========================================
-// 2. Galería: imágenes definidas por nombre
-// ==========================================
-const fotos = [
-  "foto-01-ensamble-pinza.jpeg",
-  "foto-02-detalle-servos.jpeg",
-  "foto-03-arduino-base.jpeg",
-  "foto-04-shield-pwm.jpeg",
-  "foto-05-interior-chasis.jpeg",
-  "foto-06-cableado-servos.jpeg",
-  "foto-07-pinza-mecanismo.jpeg",
-  "foto-08-mecanismo-cierre.jpeg",
-  "foto-09-base-giratoria-servo.jpeg",
-  "foto-10-ensamble-hombro.jpeg",
-  "foto-11-brazo-articulado.jpeg"
-];
-
-const galleryGrid = document.getElementById("galleryGrid");
-
-function renderCards() {
-  galleryGrid.innerHTML = "";
-  fotos.forEach((archivo, idx) => {
-    const n = idx + 1;
-    const card = document.createElement("article");
-    card.className = "card";
-    card.innerHTML = `
-      <span class="step-label">PASO ${n}</span>
-      <div class="frame-stage">
-        <div class="photo-inner">
-          <img src="img/${archivo}" alt="Paso ${n}" loading="lazy" />
-        </div>
-      </div>
-    `;
-    galleryGrid.appendChild(card);
-  });
-}
-
-renderCards();
-
 /* =========================================================
    RED NEURONAL DE FONDO CON CANVAS
    ========================================================= */
@@ -113,11 +74,11 @@ renderCards();
     var tt = Math.max(0, p.t - 0.12);
     var x0 = a.x + (b.x - a.x) * tt, y0 = a.y + (b.y - a.y) * tt;
     var g = ctx.createLinearGradient(x0, y0, x, y);
-    g.addColorStop(0, 'rgba(242,183,5,0)');
-    g.addColorStop(1, 'rgba(242,183,5,0.9)');
+    g.addColorStop(0, 'rgba(255,255,255,0)');
+    g.addColorStop(1, 'rgba(255,255,255,0.9)');
     ctx.strokeStyle = g; ctx.lineWidth = 2.2;
     ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x, y); ctx.stroke();
-    ctx.fillStyle = '#f2b705'; ctx.strokeStyle = 'rgba(13,18,29,0.8)'; ctx.lineWidth = 1;
+    ctx.fillStyle = '#ffffff'; ctx.strokeStyle = 'rgba(13,18,29,0.8)'; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.arc(x, y, 3.2, 0, 6.2832); ctx.fill(); ctx.stroke();
   }
 
@@ -137,20 +98,20 @@ renderCards();
     var i, j, a, b, dx, dy, d;
     for (i = 0; i < nodos.length; i++) {
       a = nodos[i];
-      ctx.fillStyle = 'rgba(242, 183, 5, 0.45)';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.45)';
       ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, 6.2832); ctx.fill();
 
       for (j = i + 1; j < nodos.length; j++) {
         b = nodos[j]; dx = a.x - b.x; dy = a.y - b.y; d = Math.sqrt(dx * dx + dy * dy);
         if (d < 135) {
-          ctx.strokeStyle = 'rgba(242, 183, 5,' + (0.18 * (1 - d / 135)).toFixed(3) + ')';
+          ctx.strokeStyle = 'rgba(255, 255, 255,' + (0.18 * (1 - d / 135)).toFixed(3) + ')';
           ctx.lineWidth = 1;
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
         }
       }
       dx = a.x - mx; dy = a.y - my; d = Math.sqrt(dx * dx + dy * dy);
       if (d < 160) {
-        ctx.strokeStyle = 'rgba(242, 183, 5,' + (0.65 * (1 - d / 160)).toFixed(3) + ')';
+        ctx.strokeStyle = 'rgba(255, 255, 255,' + (0.65 * (1 - d / 160)).toFixed(3) + ')';
         ctx.lineWidth = 1.2;
         ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mx, my); ctx.stroke();
       }

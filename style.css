@@ -139,9 +139,8 @@ body {
 
 /* TARJETA COMPACTA */
 .card {
-  background: rgba(13, 18, 29, 0.88);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--border);
+  background: transparent;
+  border: none;
   border-radius: 14px;
   padding: 12px;
   display: flex;
@@ -154,7 +153,6 @@ body {
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(242, 183, 5, 0.4);
 }
 
 .step-label {
@@ -190,7 +188,7 @@ body {
   height: 100%;
   border-radius: 8px;
   overflow: hidden;
-  background: #0a0f18;
+  background: transparent;
   z-index: 2;
 }
 
